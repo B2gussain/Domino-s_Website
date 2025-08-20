@@ -122,7 +122,7 @@ nav ul li:hover {
 .page1 {
     display: flex;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   background: radial-gradient(red, rgb(236, 1, 1),rgb(206, 1, 1),rgb(163, 1, 1));
 
 }
@@ -130,6 +130,7 @@ nav ul li:hover {
     padding-left: 80px;
     display: flex;
     flex-direction: column;
+    
     justify-content: center;
     /* align-items: center; */
     width: 50%;
@@ -231,7 +232,7 @@ padding: 60px 80px;
         width: 80%;
     }
     .p1{
-        color: #fbff00;
+        color: #d6da03;
     }
     button{
         outline: none;
@@ -291,3 +292,70 @@ gap: 50px;
 }
 }
 
+.page3{
+  padding: 50px  60px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 60px;
+  h2{
+    color: rgb(0, 174, 255);
+  }
+}
+
+
+
+.icons{
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  .icon_card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   gap: 10px;
+    img{
+    height: 200px;
+    padding: 20px;
+    border-radius: 15px;
+    border: 2px solid rgba(0, 0, 0, 0.281);
+
+  }
+  h3{
+    color: red;
+  }
+  p{
+    text-align: center;
+  }
+  }
+ 
+}
+@media (max-width:776px) {
+  .page3{
+    padding-top: 10px;
+  }
+  .icons{
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+}
+.bg_img{
+  height: 500px;
+  width: 100%;
+  object-fit: cover;
+  padding: 50px;
+
+}
+@media (max-width:750px) {
+  .bg_img{
+    height: 350px;
+    padding: 30px;
+  }
+  
+}
