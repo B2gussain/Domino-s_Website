@@ -4,10 +4,16 @@
   box-sizing: border-box;
   font-family: Arial, sans-serif;
 }
+
+body{
+    height: 100%;
+    width: 100vw;
+    overflow-x: hidden;
+}
 main {
     position: relative;
   /* background: #fff; */
-width: 100vw;
+width: 100%;
 }
 
 nav {
@@ -89,7 +95,8 @@ nav ul li:hover {
     left: 0;
     flex-direction: column;
     width: 100%;
-    background: rgba(0, 99, 145, 0); /* solid bg for clarity */
+    background: linear-gradient(rgba(206, 1, 1, 0.233),red, rgba(236, 1, 1, 0.747),rgba(206, 1, 1, 0.514));
+
     text-align: center;
     gap: 15px;
     padding: 20px 0;
@@ -125,6 +132,7 @@ nav ul li:hover {
     h1{
         font-size: 10em;
         font-weight: 100;
+        font-weight: bolder;
         font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     }
     h2{
@@ -173,6 +181,9 @@ nav ul li:hover {
     
 }
 @media (max-width:726px) {
+    .page1{
+        padding: 70px 10px;
+    }
 .text{
     padding: 0%;
     h1{
